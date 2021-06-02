@@ -39,7 +39,13 @@ public class SubscriberRequest {
     @Version
     private long version;
 
-    @PreInsert
+        /*@PreInsert
+    PreInsert could not be resolved
+    The PrePersist annotation does the supposedly indented operation which is to
+    initialize the 'dateCreated' and 'status' fields before persisting the entity.
+  */
+
+    @PrePersist
     protected void init() {
         if(id == null) {
             id = KeyGen.getUniqueId();
