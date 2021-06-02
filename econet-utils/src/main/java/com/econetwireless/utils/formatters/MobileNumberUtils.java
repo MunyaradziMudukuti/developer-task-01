@@ -10,7 +10,8 @@ import org.slf4j.LoggerFactory;
  */
 public class MobileNumberUtils {
 
-    private final Logger LOGGER = LoggerFactory.getLogger(MobileNumberUtils.class);
+    // The keyword static was added to make the variable accessible in a static context.
+    private final static Logger LOGGER = LoggerFactory.getLogger(MobileNumberUtils.class);
 
     private MobileNumberUtils() {
 
