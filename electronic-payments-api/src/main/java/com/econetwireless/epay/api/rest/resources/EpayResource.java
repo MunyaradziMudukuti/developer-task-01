@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 public class EpayResource {
 
     private EpayRequestProcessor epayRequestProcessor;
-
+    
     @Autowired
     private ReportingProcessor reportingProcessor;
 
